@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Lexend+Deca:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*General Styles*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/*Navbar Styles*/
+
+img {
+    width: 25px;
+    height: 25px;
+}
+
+.logo {
+    width: 135px;
+    cursor: pointer;
+}
+
+.help, .region, .profile {
+    margin-left: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    background-color: #fff;
+    padding: 0px 30px 0px 40px;
+    height: 60px;
+    width: 1500;
+    top: 0;
+    position: sticky;
+}
+
+button {
+    border-radius: 4px;
+    border: none;
+    padding: 4px;
+    width: 180px;
+    height: 48px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-icons a:hover {
+    opacity: 0.6;
+}
+
+.nav-links a {
+    padding: 8px 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(23, 26, 32);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-icons a {
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: underline;
+    color: white
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/*Hero Section Styles*/
+
+main {
+    flex: 1;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+}
+
+#hero {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background: url(assets/Teslabanner.png) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    height: 650px;
+    width: 1520px; 
+}
+
+#hero .controls {
+    display: flex;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+#hero h3 {
+    color: white;
+    margin: 0;
+    padding: 45px 0 5px 0;
+    font-size: 48px;
+}
+
+#hero p a {
+    color: white;
+    font-size: 20px;
+}
+
+
+h3 {
+    font-size: 48px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding: 24px 0 8px 0;
+}
+
+p {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding: 0 0 8px 0
+}
+
+.controls {
+    display: block;
+    margin-top: 24px;
+    gap: 8px;
+}
+
+.primary {
+    background-color: rgb(62, 106, 225);
+    color: white;
+    width: 160px;
+    height: 40px;
+
+}
+
+.secondary {
+    background-color: rgb(255,255,255);
+    color: #191d21;
+    width: 160px;
+    height: 40px;
+}
+
+/*Carousel Styles*/
+
+#carousel {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding: 40px 0;
+    gap: 15px;
+    scroll-behavior: smooth;
+    font-size: 14px;
+    cursor: pointer;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.card {
+    height: 580px;
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 40px;
+    color: white;
+    flex-shrink: 0;
+    height: 520px;
+    width: 606px;
+}
+
+#carousel, .card {
+    flex: 0 0 80%;
+    
+}
+
+.card-1 {
+   
+    background: url("assets/Model-Y.png") no-repeat center center;
+    background-size: cover;
+    
+}
+
+.card-2 {
+    background: url("assets/Model-3.png") no-repeat center center;
+    background-size: cover;
+}
+
+.card-3 {
+    background: url("assets/Model-X.png") no-repeat center center;
+    background-size: cover;
+}
+
+.card-4 {
+    background: url("assets/Model-S.png") no-repeat center center;
+    background-size: cover;
+}
+
+
+.carousel-button1 {
+    position: absolute;
+    left: 10px;
+    background: url(assets/arrow-left.svg) no-repeat center center;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(57, 60, 65);
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;;
+
+}
+
+.carousel-button2 {
+    position: absolute;
+    right: 10px;
+    background: url(assets/arrow-right.svg) no-repeat center center;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(57, 60, 65);
+    border: none;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.carousel-button1, .carousel-button2:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/* Tab list */
+
+.tds-tab {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tds-tab:focus {
+  outline: 2px solid #666;
+}
+
+.tds-tab-list-dots {
+    position: absolute;
+    bottom: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+}
+
+/* Articles*/
+
+#articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 21px;
+    margin-left: 48px;
+    margin-right: 32px;
+    margin-top: 48px;
+}
+
+#articles h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#articles h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(92, 94, 98);
+    margin-bottom: 24px;
+}
+
+#articles button {
+    width: 252px;
+}
+
+.article {
+    height: 220px;
+    width: 705px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(239, 239, 239);
+    padding-left: 40px;
+    border-radius: 7px;
+}
+
+.article .action-area {
+    margin-bottom: 40px;
+    margin-right: 25px;
+}
+
+.article-img img{
+    width: 230px;
+    height: 220px;
+    margin-top: 3px;
+    margin-left: 12px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+/* FEATURES */
+
+#features {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+#features h1 {
+    font-size: 44px;
+    font-weight: 550;
+}
+
+#features button {
+    width: 160px;
+}
+
+.feature {
+    height: 580px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 40px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.feature-1 {
+    background: url(assets/feature-1.avif) no-repeat center center;
+    background-size: cover;
+    width: 940px;
+}
+
+.feature-2 {
+    background: url(assets/feature-2.avif) no-repeat center center;
+    background-size: cover;
+    width: 470px;
+}
+
+
+/* SOLAR CAROUSEL */
+
+#solar-carousel {
+    display: flex;
+    gap: 25px;
+    margin-top: 48px;
+    margin-left: 48px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+#solar-carousel h1 {
+    margin-bottom: 5px;
+    font-size: 45px;
+}
+
+#solar-carousel h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+#solar-carousel button {
+    width: 160px;
+}
+
+.solar {
+    height: 580px;
+    width: 1024px;
+    display: flex;
+    justify-content: end;
+    flex-direction:column;
+    border-radius: 7px;
+    padding: 40px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.solar-1 {
+    background: url(assets/solar-1.avif) no-repeat center center;
+    background-size: cover;
+}
+
+.solar-2 {
+    background: url(assets/solar-2.avif) no-repeat center center;
+    background-size: cover;
+}
+
+.solar-3 {
+    background: url(assets/solar-3.avif) no-repeat center center;
+    background-size: cover;
+}
+
+.solar-4 {
+    background: url(assets/solar-4.avif) no-repeat center center;
+    background-size: cover;
+}
+
+
+/* Footer */
+
+footer{
+    margin-top: 30px;
+    padding: 10px;
+    clear: both;
+    position: relative;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    padding: 0 32px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgb(92, 94, 98);
+    padding: 5px 5px;
+    font-size: 12px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.queries {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 56px;
+    width: 1520px;
+    padding: 12px 0px 8px 0px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+input {
+    border-top: 1px solid rgb(204,204,204);
+    border-right: 1px solid rgb(204,204,204);
+    border-bottom: 1px solid rgb(204,204,204);
+    border-left: none;
+    border-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 4px;
+    height: 40px;
+    width: 370px;
+    background-color: rgb(239, 239, 239);
+    margin-right: 18px;
+    margin-left: 0px;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: rgb(145, 144, 144);
+}
+
+.drive {
+    border: 1px solid rgb(204,204,204);
+    border-radius: 4px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    color: rgb(68, 69, 71);
+}
+
+.drive::before {
+    content: url(resources/drive.png);
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-left: 18px;
+}
+
+.question {
+    border-top: 1px solid rgb(204,204,204);
+    border-right: none;
+    border-bottom: 1px solid rgb(204,204,204);
+    border-left: 1px solid rgb(204,204,204);
+    border-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: 165px;
+    color: rgb(68, 69, 71);
+}
+
+.question::before {
+    content: url(assets/ask.png);
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-left: 18px;
+}
+    
+/* Default style */
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  .element1::first-letter {
+    font-size: 18px;
+  }
+}
+
+/* Larger screens (tablets & up) */
+@media (min-width: 900px) {
+  .element1::first-letter {
+    font-size: 28px;
+  }
+}
+
+
+
+
+
+
+
+
+
